@@ -13,7 +13,7 @@ const professionSchema = new Schema({
     },
     professionId :{
         type : String,
-        default: ''
+        default: `PROF-${moment().valueOf().toString()}`
     },
     companyName: {
         type: String,

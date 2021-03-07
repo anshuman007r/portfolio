@@ -15,7 +15,7 @@ const projectSchema = new Schema({
     },
     projectId :{
         type : String,
-        default: ''
+        default: `PRO-${moment().valueOf().toString()}`
     },
     githubLink :{
         type: String,

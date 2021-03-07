@@ -10,7 +10,7 @@ const skillSchema = new Schema({
     },
     skillId :{
         type : String,
-        default: ''
+        default: `SKILL-${moment().valueOf().toString()}`
     },
     skill :{
         type : String

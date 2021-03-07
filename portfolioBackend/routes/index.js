@@ -3,6 +3,7 @@ import contact from '../controllers/contactController'
 import project from '../controllers/projectController'
 import home from '../controllers/homeController'
 import about from '../controllers/aboutController'
+import auth from '../controllers/authController'
 
 export default (app) => {
     app.route('/')
@@ -34,4 +35,7 @@ export default (app) => {
     app.route('/about/:type')
     .post(about.createAboutData)
     .put(about.updateAboutData)
+
+    app.route('/login')
+    .post(auth.checkAuth)
 };

@@ -38,7 +38,7 @@ exports.updateProject = (req, res) => {
 
 exports.deleteProject = (req, res) => {
     project.deleteOne({
-        _id: req.params.projectId
+        projectId: req.params.projectId
     }, (err) => {
         if(err){
             res.status(400).send(`there is no project with id ${req.params.projectId}`)

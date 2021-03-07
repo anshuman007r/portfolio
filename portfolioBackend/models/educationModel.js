@@ -13,7 +13,7 @@ const eductationSchema = new Schema({
     },
     educationId:{
         type:String,
-        default : ''
+        default : `EDU-${moment().valueOf().toString()}`
     },
     studyProgram: {
         type: String,
